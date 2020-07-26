@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /home-2.html
+Disallow: /elements.html
+Disallow: /contact.html
+Disallow: /blog.html
+Disallow: /about.html
+Sitemap: https://agnieszka.gq/sitemap.xml
