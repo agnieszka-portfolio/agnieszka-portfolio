@@ -24,7 +24,7 @@ $(window).on('load', function() {
 
 });
 
-function hideElement(class_name) {
+function toggleElement(class_name) {
 	var x = document.getElementsByClassName(class_name);
 	if (x.style.display === "none") {
 	  x.style.display = "block";
@@ -83,8 +83,12 @@ function hideElement(class_name) {
 		removalDelay: 400,
 	});
 
-	$(document.body).on("magnificPopup", function() {
-		hideElement('privy-tab');
+	$('.pi-inner').on("click", function() {
+		toggleElement('privy-tab');
+	});
+
+	$('.mfp-close', '.mfp-container').on("click", function() {
+		toggleElement('privy-tab');
 	});
 
 	/*------------------
