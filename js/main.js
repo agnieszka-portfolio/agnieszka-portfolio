@@ -83,7 +83,7 @@ function hideElement(class_name) {
 		removalDelay: 400,
 	});
 
-	$( ".portfolio-item" ).click(function() {
+	$(document.body).on("magnificPopup", function() {
 		hideElement('privy-tab');
 	});
 
