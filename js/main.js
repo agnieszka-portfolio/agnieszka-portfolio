@@ -78,18 +78,14 @@ function toggleElementById(id_name) {
 		Popup
 	--------------------*/
 	$('.portfolio-item').magnificPopup({
-		type: 'image',
 		mainClass: 'img-popup-warp',
-		removalDelay: 400,
+		type: 'image',
+		removalDelay: 400
 	});
 
-	$('.pi-inner').on("click", function() {
+	$( "a.portfolio-item.set-bg" ).focus(function() {
 		toggleElementById('privy-inner-container');
-	});
-
-	$('.mfp-close', '.mfp-container').on("click", function() {
-		toggleElementById('privy-inner-container');
-	});
+	  });	  
 
 	/*------------------
 		Accordions
