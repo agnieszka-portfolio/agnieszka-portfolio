@@ -24,6 +24,14 @@ $(window).on('load', function() {
 
 });
 
+function hideElement(class_name) {
+	var x = document.getElementsByClassName(class_name);
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+}
 
 (function($) {
 
@@ -75,6 +83,9 @@ $(window).on('load', function() {
 		removalDelay: 400,
 	});
 
+	$( ".portfolio-item" ).click(function() {
+		hideElement('privy-tab');
+	});
 
 	/*------------------
 		Accordions
